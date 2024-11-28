@@ -3,37 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Imatges responsives</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
+    <title>Imatges Responsives</title>
+    <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
-    <img
-      srcset="
-        images/bosc.webp  600w,
-        images/foto.jpg  1200w,
-        images/mar.webp  1800w
-      "
-      sizes="(min-width: 1280px) 600px,(min-width: 768px) 500px, 100vw"
-      src="images/foto.jpg"
-      alt="Paisatge"
-    />
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inserció bàsica</a></li>
+          <li><a href="imatges_responsive.html">Imatges responsive</a></li>
+          <li><a href="galeria_lightbox.html">Galeria lightbox</a></li>
+          <li><a href="mapa_interactiu.html">Mapa interactiu</a></li>
+          <li><a href="lazy_loading.html">Lazy loading</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <picture>
-      <source media="(min-width:800px)" srcset="images/bosc.webp" />
-      <source media="(min-width:600px)" srcset="images/mar.webp" />
-      <img src="images/foto.jpg" alt="Paisatge" />
-    </picture>
+    <!-- Imatge amb srcset -->
+    <section>
+      <h1>Imatge amb srcset</h1>
+      <img
+        class="responsive-img"
+        srcset="
+          images/neon.jpg  600w,
+          images/foto.jpg 1200w,
+          images/mar.webp 1800w
+        "
+        sizes="(min-width: 1280px) 600px, (min-width: 768px) 500px, 100vw"
+        src="images/foto.jpg"
+        alt="Paisatge"
+      />
+    </section>
 
-    <section class="bg-gray-100 p-6 m-20 rounded-lg shadow-lg">
-      <h1 class="text-3xl font-bold text-black mb-4">
+    <!-- Imatge amb picture -->
+    <section>
+      <h1>Imatge amb &lt;picture&gt;</h1>
+      <picture>
+        <source media="(min-width:800px)" srcset="images/neon.jpg" />
+        <source media="(min-width:600px)" srcset="images/mar.webp" />
+        <img class="responsive-img" src="images/foto.jpg" alt="Paisatge" />
+      </picture>
+    </section>
+
+    <section class="container">
+      <h1>
         Quin avantatge té utilitzar picture per a direcció d’art en comparació
         amb srcset?
       </h1>
-      <p class="text-gray-700 leading-relaxed"></p>
+      <p>
+        L'element <code>&lt;picture&gt;</code> ofereix més flexibilitat que
+        <code>srcset</code> quan es vol mostrar imatges diferents segons les
+        condicions de la mida de la pantalla. Utilitzant
+        <code>&lt;picture&gt;</code> podem carregar imatges amb resolucions o
+        formats específics per a diferents dispositius (per exemple, una imatge
+        optimitzada per a mòbils per a pantalles petites i una imatge d'alta
+        resolució per a pantalles grans). En canvi, <code>srcset</code> es fa
+        servir per a definir diferents resolucions d'una mateixa imatge, sense
+        tenir en compte tant les condicions de pantalla com el tipus de
+        dispositiu.
+      </p>
+    </section>
+    <section>
+      <h1>Captures srcset</h1>
+      <picture>
+        <img class="responsive-img" src="images/captura1.png" alt="Captura" />
+        <img class="responsive-img" src="images/captura2.png" alt="Captura" />
+        <img class="responsive-img" src="images/captura3.png" alt="Captura" />
+      </picture>
     </section>
   </body>
 </html>

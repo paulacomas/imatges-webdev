@@ -2,43 +2,70 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <title>Lightbox Example</title>
-    <link rel="stylesheet" href="./dist/css/lightbox.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria Lightbox</title>
+    <link rel="stylesheet" href="styles/galeria.css" />
+
+    <!-- Lightbox2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inserció bàsica</a></li>
+          <li><a href="imatges_responsive.html">Imatges responsive</a></li>
+          <li><a href="galeria_lightbox.html">Galeria lightbox</a></li>
+          <li><a href="mapa_interactiu.html">Mapa interactiu</a></li>
+          <li><a href="lazy_loading.html">Lazy loading</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección Galería -->
     <section>
-      <div>
+      <h1 style="text-align: center; width: 100%">Galeria d'Imatges</h1>
+      <div class="gallery">
+        <!-- Imagen 1 -->
         <a
-          class="example-image-link"
           href="images/bosc.webp"
-          data-lightbox="example-set"
-          data-title="Click the right half of the image to move forward."
-          ><img class="example-image" src="images/bost_petit.png" alt=""
-        /></a>
+          data-lightbox="galeria"
+          data-title="Paisatge al bosc"
+        >
+          <img src="images/bost_petit.png" alt="Paisatge al bosc" />
+        </a>
+        <!-- Imagen 2 -->
         <a
-          class="example-image-link"
           href="images/mar.webp"
-          data-lightbox="example-set"
-          data-title="Or press the right arrow on your keyboard."
-          ><img class="example-image" src="images/mar_petit.png" alt=""
-        /></a>
+          data-lightbox="galeria"
+          data-title="Paisatge marí"
+        >
+          <img src="images/mar_petit.png" alt="Paisatge marí" />
+        </a>
+        <!-- Imagen 3 -->
         <a
-          class="example-image-link"
           href="images/foto.jpg"
-          data-lightbox="example-set"
-          data-title="The next image in the set is preloaded as you're viewing."
-          ><img class="example-image" src="images/foto_petita.png" alt=""
-        /></a>
+          data-lightbox="galeria"
+          data-title="Vista de la ciutat"
+        >
+          <img src="images/foto_petita.png" alt="Vista de la ciutat" />
+        </a>
+        <!-- Imagen 4 -->
         <a
-          class="example-image-link"
           href="images/ciutat.webp"
-          data-lightbox="example-set"
-          data-title="Click anywhere outside the image or the X to the right to close."
-          ><img class="example-image" src="images/ciutat_petit.png" alt=""
-        /></a>
+          data-lightbox="galeria"
+          data-title="Ciutat nocturna"
+        >
+          <img src="images/ciutat_petit.png" alt="Ciutat nocturna" />
+        </a>
       </div>
     </section>
 
-    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>

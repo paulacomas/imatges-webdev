@@ -1,0 +1,123 @@
+/* Estilos comunes para ambas páginas */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para las imágenes */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.comparison {
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comparison h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.comparison ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comparison ul li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Estilo de las secciones de reflexión */
+.reflection-section {
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.section-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Estilo para la galería de imágenes */
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px;
+  gap: 10px;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan a una nueva línea si es necesario */
+}
+
+.image-gallery img {
+  width: 48%; /* Hace que las imágenes sean casi del mismo tamaño */
+  height: auto;
+}
+
+/* Para imágenes en "lazy loading" */
+.lazy-loading-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.lazy-loading-images img {
+  width: 48%;
+  height: auto;
+}

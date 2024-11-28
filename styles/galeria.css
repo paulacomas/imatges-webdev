@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el borde y padding se incluyan en el tamaño total */
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: block;
+  width: 100%;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para la galería */
+section {
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra el contenido de la sección */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Utilizando Flexbox para centrar las imágenes en el contenedor */
+.gallery {
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 20px; /* Espaciado entre las imágenes */
+  flex-wrap: wrap;
+  max-width: 100%; /* Asegura que no exceda el contenedor */
+  margin: 0 auto;
+}
+
+.gallery a {
+  display: block;
+  border: 2px solid #ddd;
+  padding: 10px;
+  background-color: white;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra la imagen dentro del contenedor */
+}
+
+.gallery a:hover {
+  transform: scale(1.05);
+  border-color: #888;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra las imágenes dentro de su contenedor */
+}

@@ -3,9 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lazy loading</title>
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="styles/lazy.css" />
   </head>
   <body>
-    
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inserció bàsica</a></li>
+          <li><a href="imatges_responsive.html">Imatges responsive</a></li>
+          <li><a href="galeria_lightbox.html">Galeria lightbox</a></li>
+          <li><a href="mapa_interactiu.html">Mapa interactiu</a></li>
+          <li><a href="lazy_loading.html">Lazy loading</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="lazy-loading-images">
+        <img
+          src="images/bosc.webp"
+          alt="Imatge d'un bosc amb Lazy Loading"
+          loading="lazy"
+        />
+        <img
+          src="images/mar.webp"
+          alt="Imatge del mar amb Lazy Loading"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="comparison">
+        <h3>Sense Lazy Loading:</h3>
+        <img src="images/senselazy.png" alt="Imatge sense lazy loading" />
+        <p>
+          Sense lazy loading, les imatges es carreguen immediatament, fet que
+          augmenta el temps de càrrega de la pàgina. Això afecta el rendiment
+          general, especialment per a imatges grans o pàgines amb molts recursos
+          visuals.
+        </p>
+
+        <h3>Amb Lazy Loading:</h3>
+        <img src="images/amblazy.png" alt="Imatge amb lazy loading" />
+        <p>
+          Amb lazy loading activat, les imatges només es carreguen quan l'usuari
+          les veu en la pantalla, millorant el temps de càrrega inicial i la
+          seva experiència. Això també ajuda a reduir els canvis visuals
+          inesperats durant el desplaçament.
+        </p>
+
+        <h3>Millores amb Lazy Loading:</h3>
+        <ul>
+          <li>Reducció de l'LCP de 4.3 s a 3.5 s.</li>
+          <li>
+            Millora del CLS (estabilitat visual), passant de 0.625 a 0.076.
+          </li>
+          <li>
+            Millora del Speed Index, indicant una càrrega més ràpida de la
+            pàgina.
+          </li>
+          <li>Menor càrrega de xarxa i estalvi de recursos.</li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

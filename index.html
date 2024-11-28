@@ -3,27 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Inserció bàsica d’imatges</title>
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="insercio_basica.html">Insercio basica</a>
-        </li>
-        <li>
-          <a href="imatges_responsive.html">Imatges responsive</a>
-        </li>
-        <li>
-          <a href="galeria_lightbox.html">Galaria lightbox</a>
-        </li>
-        <li>
-          <a href="mapa_interactiu.html">Map interectiu</a>
-        </li>
-        <li>
-            <a href="mapa_interactiu.html">Map interectiu</a>
-          </li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inserció bàsica</a></li>
+          <li><a href="imatges_responsive.html">Imatges responsive</a></li>
+          <li><a href="galeria_lightbox.html">Galeria lightbox</a></li>
+          <li><a href="mapa_interactiu.html">Mapa interactiu</a></li>
+          <li><a href="lazy_loading.html">Lazy loading</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Imatge principal -->
+    <img src="images/foto.jpg" alt="Paisatge" class="main-image" />
+
+    <!-- Secció de reflexió sobre l'atribut alt -->
+    <section class="reflection-section">
+      <h1 class="section-title">
+        Per què l’atribut alt és important per a les imatges?
+      </h1>
+      <p class="section-text">
+        L'atribut alt facilita la accesibilitat a aquells usuaris que no poden
+        veure correctament les imatges perquè no se'ls hi carrega o si hi ha un
+        error a la imatge, l'alt sempre mostrarà la descripció.
+      </p>
+    </section>
+
+    <!-- Galeria d'imatges -->
+    <section class="image-gallery">
+      <img
+        src="images/mar.webp"
+        alt="Imatge optimitzada amb WebP"
+        width="400"
+        height="300"
+        class="gallery-image"
+      />
+      <img
+        src="images/mar.avif"
+        alt="Imatge optimitzada amb AVIF"
+        width="400"
+        height="300"
+        class="gallery-image"
+      />
+      <img
+        src="images/bosc.webp"
+        alt="Imatge optimitzada amb WebP"
+        width="400"
+        height="300"
+        class="gallery-image"
+      />
+      <img
+        src="images/bosc.avif"
+        alt="Imatge optimitzada amb AVIF"
+        width="400"
+        height="300"
+        class="gallery-image"
+      />
+    </section>
+
+    <!-- Secció de reflexió sobre la mida real de la imatge i els atributs width i height -->
+    <section class="reflection-section">
+      <h1 class="section-title">
+        Quina diferència hi ha entre la mida real de la imatge i els atributs
+        width i height?
+      </h1>
+      <p class="section-text">
+        La mida real d'una imatge és la seva resolució original (ample i alt en
+        píxels). Els atributs `width` i `height` defineixen la mida visual de la
+        imatge a la pàgina, permetent que es redimensioni per ajustar-se a la
+        disposició de la pàgina web. Això pot millorar el temps de càrrega, ja
+        que el navegador pot processar la imatge més ràpidament si té una mida
+        predeterminada abans de la seva càrrega completa.
+      </p>
+    </section>
   </body>
 </html>
