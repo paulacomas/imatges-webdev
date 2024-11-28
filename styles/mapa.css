@@ -33,7 +33,6 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Estils de la imatge del mapa */
 img {
   max-width: 100%;
   height: auto;
@@ -41,7 +40,6 @@ img {
   margin: 20px auto;
 }
 
-/* Estils del contingut de la pàgina */
 section {
   padding: 20px;
   text-align: center;

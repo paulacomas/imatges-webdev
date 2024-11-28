@@ -1,4 +1,3 @@
-/* Estilos comunes para ambas páginas */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -36,7 +35,6 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Estilos para las imágenes */
 img {
   width: 100%;
   height: auto;
@@ -74,7 +72,6 @@ img {
   margin-bottom: 10px;
 }
 
-/* Estilo de las secciones de reflexión */
 .reflection-section {
   background-color: #e0e0e0;
   padding: 20px;
@@ -95,21 +92,19 @@ img {
   line-height: 1.6;
 }
 
-/* Estilo para la galería de imágenes */
 .image-gallery {
   display: flex;
   justify-content: space-between;
   margin: 20px 20px;
   gap: 10px;
-  flex-wrap: wrap; /* Permite que las imágenes se envuelvan a una nueva línea si es necesario */
+  flex-wrap: wrap;
 }
 
 .image-gallery img {
-  width: 48%; /* Hace que las imágenes sean casi del mismo tamaño */
+  width: 48%;
   height: auto;
 }
 
-/* Para imágenes en "lazy loading" */
 .lazy-loading-images {
   display: flex;
   justify-content: center;
